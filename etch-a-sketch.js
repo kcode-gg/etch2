@@ -86,3 +86,16 @@ function clearCanvas() {
 window.addEventListener('keydown', handleKey);
 
 shakeButton.addEventListener('click', clearCanvas);
+
+const secret = document.querySelector('.secret');
+
+secret.addEventListener('click', function(e){
+    const getAccess = prompt('Hey, you found me! To get access, what is the secret phrase?');
+
+    if (getAccess === 'KCODE'){
+        alert("Congrats! Here is the discord invite code. \n It's valid for 1 use so do not share it.\n xC78KBLdf");
+    } else {
+        alert("Nice try dog. Come again once you're worthy");
+    }
+
+})
